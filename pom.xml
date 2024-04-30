@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.book.address</groupId>
+	<artifactId>addressBook-parent</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<properties>
+
+		<liferay.app.server.deploy.dir>
+			C:\Users\marcelino.rutea\Tasks\NAIAB\installJava7\tomcat-7.0.62\webapps
+		</liferay.app.server.deploy.dir>
+
+		<liferay.app.server.lib.global.dir>
+			C:\Users\marcelino.rutea\Tasks\NAIAB\installJava7\tomcat-7.0.62\lib\ext
+		</liferay.app.server.lib.global.dir>
+
+		<liferay.app.server.portal.dir>
+			C:\Users\marcelino.rutea\Tasks\NAIAB\installJava7\tomcat-7.0.62\webapps\root
+		</liferay.app.server.portal.dir>
+
+		<liferay.auto.deploy.dir>
+			C:\Users\marcelino.rutea\Tasks\NAIAB\installJava7\deploy
+		</liferay.auto.deploy.dir>
+
+		<liferay.maven.plugin.version>
+			6.2.2
+		</liferay.maven.plugin.version>
+
+		<liferay.version>
+			6.2.3
+		</liferay.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.liferay.portal</groupId>
+			<artifactId>portal-client</artifactId>
+			<version>${liferay.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.liferay.portal</groupId>
+			<artifactId>portal-impl</artifactId>
+			<version>${liferay.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.liferay.portal</groupId>
+			<artifactId>portal-pacl</artifactId>
+			<version>${liferay.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.liferay.portal</groupId>
+			<artifactId>portal-service</artifactId>
+			<version>${liferay.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.liferay.portal</groupId>
+			<artifactId>portal-web</artifactId>
+			<version>${liferay.version}</version>
+			<type>war</type>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.liferay.portal</groupId>
+			<artifactId>util-bridges</artifactId>
+			<version>${liferay.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.liferay.portal</groupId>
+			<artifactId>util-taglib</artifactId>
+			<version>${liferay.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.liferay.portal</groupId>
+			<artifactId>util-java</artifactId>
+			<version>${liferay.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.liferay.portal</groupId>
+			<artifactId>util-slf4j</artifactId>
+			<version>${liferay.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+	</dependencies>
+
+	<modules>
+		<module>addressBook-service</module>
+		<module>addressBook-portlet</module>
+	</modules>
+
+</project>

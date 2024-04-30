@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="com.book.address.service.AddressBookLocalService" class="com.book.address.service.impl.AddressBookLocalServiceImpl" />
+	<bean id="com.book.address.service.AddressBookService" class="com.book.address.service.impl.AddressBookServiceImpl" />
+	<bean id="com.book.address.service.persistence.AddressBookPersistence" class="com.book.address.service.persistence.AddressBookPersistenceImpl" parent="basePersistence" />
+</beans>

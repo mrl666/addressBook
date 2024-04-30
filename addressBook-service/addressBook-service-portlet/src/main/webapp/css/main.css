@@ -1,0 +1,34 @@
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+/* Table header styles */
+th {
+  background-color: #f2f2f2;
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Table row styles */
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+/* Table data (cell) styles */
+td {
+  padding: 8px;
+}
+
+/* Alternating row colors */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Hover effect on rows */
+tr:hover {
+  background-color: #ddd;
+}
