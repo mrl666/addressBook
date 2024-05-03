@@ -2,7 +2,6 @@ package com.book.address.controller;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.UUID;
 import javax.portlet.ActionRequest;
 import javax.portlet.ActionResponse;
 import javax.portlet.PortletException;
@@ -12,13 +11,12 @@ import javax.portlet.RenderResponse;
 import com.book.address.model.AddressBook;
 import com.book.address.model.impl.AddressBookImpl;
 import com.book.address.service.AddressBookLocalServiceUtil;
-import com.liferay.util.bridges.mvc.MVCPortlet;
 import com.liferay.counter.service.CounterLocalServiceUtil;
 import com.liferay.portal.kernel.exception.PortalException;
 import com.liferay.portal.kernel.exception.SystemException;
 import com.liferay.portal.kernel.log.Log;
 import com.liferay.portal.kernel.log.LogFactoryUtil;
-import com.liferay.portal.kernel.util.ParamUtil;
+import com.liferay.util.bridges.mvc.MVCPortlet;
 
 /**
  * Portlet implementation class AddressBookPortlet

@@ -27,12 +27,21 @@ This is the <b>addressBook-service</b>.
     <th>Name</th>
     <th>Email</th>
     <th>Age</th>
+    <th>Message</th>
+    <th></th>
   </tr>
   <c:forEach var="addressBook" items="${addressBooks}">
     <tr>
       <td>${addressBook.name}</td>
       <td>${addressBook.email}</td>
       <td>${addressBook.age}</td>
+      <td>${addressBook.message}</td>
+      <td>
+        <portlet:actionURL var="deleteRecordURL" name="deleteRecordAction">
+          <portlet:param name="addressBookId" value="${addressBook.addressBookId}" />
+        </portlet:actionURL>
+        <a href="<%= deleteRecordURL %>" onclick="return confirm('Are you sure you want to delete this record?')">Delete</a>
+      </td>
     </tr>
   </c:forEach>
 </table>
