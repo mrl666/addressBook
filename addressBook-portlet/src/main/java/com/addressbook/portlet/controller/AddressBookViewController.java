@@ -37,24 +37,7 @@ public class AddressBookViewController extends MVCPortlet {
 //      throws PortletException, IOException {
 //
 //    System.out.println("render");
-
-    // try {
-    // AddressBook addressBook = new AddressBookImpl();
-    // addressBook.setAddressBookId(AddressBookLocalServiceUtil.getAddressBooksCount()+1);
-    // addressBook.setAge(100);
-    // addressBook.setEmail("mm@hotmail.com");
-    // addressBook.setMessage("Testing message");
-    // addressBook.setName("My name");
-    //
-    // AddressBookLocalServiceUtil.addAddressBook(addressBook);
-    // int count = AddressBookLocalServiceUtil.getAddressBooksCount();
-    //
-    // System.out.println("addressBook count: " + count);
-    //
-    // } catch (SystemException e) {
-    // e.printStackTrace();
-    // }
-
+  
 //  }
 
   @Override
